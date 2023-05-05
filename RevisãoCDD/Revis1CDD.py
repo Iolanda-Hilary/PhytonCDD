@@ -8,7 +8,7 @@ for t in range(3):
     aluno=input("Digite o nome do aluno para procurar")
 
     if aluno in nomes:
-        print("aluno encontrado!{}".format(t))
+        print("aluno encontrado na posição {}".format(t))
     else:
         print("Aluno não consta")
 
