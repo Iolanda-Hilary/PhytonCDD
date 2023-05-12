@@ -1,11 +1,10 @@
-def Produto(quantidade,valunit):
+def Produto(quantidade,valunit, nome):
     valtotal=quantidade*valunit
-    return valtotal
+    return nome, valtotal #forma e retorna a tupla com a respectivas posições
 
-quantidade=int(input("quantidade em estoque:"))
-valunit=float(input("valor unitario:"))
+#quantidade=int(input("quantidade em estoque:"))
+#valunit=float(input("valor unitario:"))
 
-valortotalvariavel= Produto(quantidade,valunit)
+nome,preco=Produto(3, 4.50, "carne")
 
-conta=valortotalvariavel - 1
-print(conta)
+print(f"o produto",preco,"custa", nome)
